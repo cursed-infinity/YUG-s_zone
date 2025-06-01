@@ -1,0 +1,1 @@
+# YUG-s_education
