@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>અધ્યાય 4 - રેખીય સમીકરણો</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Noto Sans Gujarati', sans-serif;
+      background: linear-gradient(135deg, #56ab2f, #a8e063);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    header, footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .question {
+      background: rgba(0,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .question h3 {
+      margin: 0 0 10px;
+    }
+    .question p {
+      margin: 0;
+      line-height: 1.7;
+    }
+    .answer {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ffff88;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YUG's Education - અધ્યાય 4</h1>
+    <p>રેખીય સમીકરણો - પ્રશ્નો અને સરળ જવાબો</p>
+  </header>
+
+  <nav>
+    <a href="index.html">હોમ</a>
+    <a href="chapter1.html">અધ્યાય 1</a>
+    <a href="chapter2.html">અધ્યાય 2</a>
+    <a href="chapter3.html">અધ્યાય 3</a>
+    <a href="chapter4.html">અધ્યાય 4</a>
+    <a href="chapter5.html" style="background-color: rgba(255,255,255,0.35); color:#0b3d91; box-shadow: 0 4px 10px rgba(255,255,255,0.6); border-radius: 30px; font-weight: 800;">અધ્યાય 5</a>
+  </nav>
+
+  <main>
+    <div class="question">
+      <h3>પ્રશ્ન 1:</h3>
+      <p>રેખીય સમીકરણ શું છે?</p>
+      <p class="answer">જે સમીકરણમાં દરેક પરિબળ (variable)ની શક્તિ 1 હોય અને જે રેખીય સ્વરૂપમાં હોય તેને રેખીય સમીકરણ કહે છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 2:</h3>
+      <p>રેખીય સમીકરણનું ઉદાહરણ આપો.</p>
+      <p class="answer">2x + 3y = 6 એ રેખીય સમીકરણ છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 3:</h3>
+      <p>રેખीय સમીકરણ કેવી રીતે ઉકેલાય?</p>
+      <p class="answer">પરિબળોની મૂલ્ય શોધવા માટે સમીકરણને સરળ બનાવીને એક પરિબળના રુપમાં મૂલ્ય શોધી શકાય છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 4:</h3>
+      <p>એક રેખીય સમીકરણ ઉકેલો: 3x + 4 = 19</p>
+      <p class="answer">3x = 19 - 4 = 15, એટલે x = 15/3 = 5</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 5:</h3>
+      <p>દેવા રેખીય સમીકરણ 5x - 2y = 20 અને x = 4 હોય તો y ની કિંમત શોધો.</p>
+      <p class="answer">5×4 - 2y = 20 → 20 - 2y = 20 → -2y = 0 → y = 0</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 6:</h3>
+      <p>રેખીય સમીકરણ 7x - 3 = 4x + 6 ને ઉકેલો.</p>
+      <p class="answer">7x - 3 = 4x + 6 → 7x - 4x = 6 + 3 → 3x = 9 → x = 3</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 7:</h3>
+      <p>રેખીય સમીકરણમાં શું તત્વો હોય છે?</p>
+      <p class="answer">પરિબળ (variable), અંક (coefficient), અને સ્થિરાંક (constant) હોય છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 8:</h3>
+      <p>સમીકરણ 4x + 5 = 3x + 11 ના ઉકેલ શું છે?</p>
+      <p class="answer">4x - 3x = 11 - 5 → x = 6</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 9:</h3>
+      <p>રેખીય સમીકરણ 2x + 3y = 12 માટે જો y = 2 હોય તો x ની કિંમત શોધો.</p>
+      <p class="answer">2x + 3×2 = 12 → 2x + 6 = 12 → 2x = 6 → x = 3</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 10:</h3>
+      <p>સમીકરણ 6x - 4 = 2x + 12 ને ઉકેલો.</p>
+      <p class="answer">6x - 2x = 12 + 4 → 4x = 16 → x = 4</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 11:</h3>
+      <p>જ્યારે રેખીય સમીકરણમાં એક કરતાં વધુ પરિબળ હોય ત્યારે તેને શું કહે છે?</p>
+      <p class="answer">એને વિસમીકરણ (Simultaneous Equations) કહે છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 12:</h3>
+      <p>રેખીય વિસમીકરણની ઉદાહરણ આપો.</p>
+      <p class="answer">2x + y = 7 અને x - y = 1 એ રેખીય વિસમીકરણ છે.</p>
+    </div>
+
+    <div class="question">
+      <h3>પ્રશ્ન 13:</h3>
+      <p>સમીકરણ 5x + 2 = 3x + 10 ને ઉકેલો.</p>
+      <p class="answer">5x - 3x = 10 - 2 → 2x = 8 → x = 4</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 YUG's Education. સર્વ હક્કો સુરક્ષિત છે.</p>
+  </footer>
+</body>
+</html>
